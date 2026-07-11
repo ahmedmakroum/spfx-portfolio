@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-portfolio-client-side-solution",
+    "id": "0826f681-be26-44e2-8e84-2d47e99a5fce",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spfx-portfolio description"
+      },
+      "longDescription": {
+        "default": "spfx-portfolio description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-portfolio Feature",
+        "description": "The feature that activates elements of the spfx-portfolio solution.",
+        "id": "a940cbb8-f329-486e-84f0-9ee4c5fbc9bc",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-portfolio.sppkg"
+  }
+}

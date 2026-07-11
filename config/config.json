@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "list-analytics-dashboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/listAnalyticsDashboard/ListAnalyticsDashboardWebPart.js",
+          "manifest": "./src/webparts/listAnalyticsDashboard/ListAnalyticsDashboardWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ListAnalyticsDashboardWebPartStrings": "lib/webparts/listAnalyticsDashboard/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}

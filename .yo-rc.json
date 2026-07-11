@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "24.14.0",
+    "sdksVersions": {},
+    "version": "1.23.2",
+    "libraryName": "spfx-portfolio",
+    "libraryId": "0826f681-be26-44e2-8e84-2d47e99a5fce",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfx-portfolio",
+    "solutionShortDescription": "spfx-portfolio description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

@@ -1,0 +1,24 @@
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  background: var(--chartSurface, #fcfcfb);
+  border: 1px solid var(--chartBorder, rgba(11, 11, 11, 0.1));
+  border-radius: 4px;
+}
+
+.field {
+  min-width: 150px;
+  flex: 1 1 150px;
+  max-width: 220px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+  align-items: center;
+}

@@ -1,0 +1,14 @@
+.root {
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.banner {
+  margin-bottom: 12px;
+}
+
+.chartsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
