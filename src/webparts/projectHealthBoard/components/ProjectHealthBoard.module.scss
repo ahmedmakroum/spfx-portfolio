@@ -1,0 +1,51 @@
+.root { box-sizing: border-box; color: var(--bodyText, #242424); font-family: "Segoe UI", Arial, sans-serif; padding: 16px; }
+.header { align-items: flex-start; border-bottom: 1px solid #e1dfdd; display: flex; gap: 16px; justify-content: space-between; margin-bottom: 16px; padding-bottom: 16px; }
+.eyebrow { color: #605e5c; font-size: 12px; font-weight: 600; letter-spacing: 0; margin: 0 0 4px; text-transform: uppercase; }
+.title { font-size: 24px; font-weight: 600; line-height: 1.2; margin: 0; }
+.subtitle { color: #605e5c; font-size: 14px; margin: 5px 0 0; }
+.metrics { display: grid; gap: 10px; grid-template-columns: repeat(4, minmax(135px, 1fr)); margin-bottom: 16px; }
+.metric { background: #f8f8f8; border: 1px solid #edebe9; border-left: 4px solid #0078d4; min-height: 76px; padding: 12px; }
+.metricGood { border-left-color: #107c10; }
+.metricWarn { border-left-color: #d83b01; }
+.metricBad { border-left-color: #a4262c; }
+.metricLabel { color: #605e5c; display: block; font-size: 12px; margin-bottom: 5px; }
+.metricValue { font-size: 25px; font-weight: 600; }
+.layout { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr) 300px; }
+.filters { align-items: end; display: grid; gap: 10px; grid-template-columns: minmax(180px, 1.4fr) repeat(2, minmax(145px, 1fr)); margin-bottom: 12px; }
+.filter { min-width: 0; }
+.tableWrap { border: 1px solid #e1dfdd; overflow-x: auto; }
+.table { border-collapse: collapse; min-width: 760px; width: 100%; }
+.table th { background: #f3f2f1; color: #323130; font-size: 12px; font-weight: 600; padding: 10px 12px; text-align: left; white-space: nowrap; }
+.table td { border-top: 1px solid #edebe9; font-size: 13px; padding: 11px 12px; vertical-align: middle; }
+.projectButton { background: transparent; border: 0; color: #005a9e; cursor: pointer; font: inherit; font-weight: 600; padding: 0; text-align: left; }
+.projectButton:hover { text-decoration: underline; }
+.subtext { color: #605e5c; font-size: 12px; margin-top: 3px; }
+.progressTrack { background: #edebe9; height: 6px; min-width: 115px; overflow: hidden; }
+.progressFill { background: #0078d4; height: 100%; }
+.health { border-radius: 2px; display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 7px; white-space: nowrap; }
+.healthGood { background: #dff6dd; color: #0b5a10; }
+.healthWarn { background: #fff4ce; color: #5c2d00; }
+.healthBad { background: #fde7e9; color: #a4262c; }
+.side { border-left: 1px solid #e1dfdd; padding-left: 16px; }
+.sideTitle { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+.sideHint { color: #605e5c; font-size: 13px; line-height: 1.4; margin: 0 0 14px; }
+.risk { border-bottom: 1px solid #edebe9; padding: 0 0 14px; margin-bottom: 14px; }
+.risk:last-child { border-bottom: 0; margin-bottom: 0; }
+.riskTop { align-items: center; display: flex; gap: 8px; justify-content: space-between; }
+.riskTitle { font-size: 13px; font-weight: 600; }
+.riskBody { color: #605e5c; font-size: 13px; line-height: 1.4; margin: 6px 0 8px; }
+.riskMeta { color: #605e5c; font-size: 12px; }
+.panelGrid { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+.fieldLabel { color: #605e5c; display: block; font-size: 12px; margin-bottom: 4px; }
+.fieldValue { font-size: 14px; line-height: 1.45; }
+.full { grid-column: 1 / -1; }
+.sectionTitle { border-bottom: 1px solid #edebe9; font-size: 16px; font-weight: 600; margin: 22px 0 0; padding-bottom: 8px; }
+.milestone { align-items: flex-start; border-bottom: 1px solid #edebe9; display: grid; gap: 10px; grid-template-columns: 92px 1fr auto; padding: 11px 0; }
+.milestoneDate { color: #605e5c; font-size: 12px; }
+.milestoneTitle { font-size: 13px; font-weight: 600; }
+.milestoneMeta { color: #605e5c; font-size: 12px; margin-top: 3px; }
+.actions { border-top: 1px solid #edebe9; display: flex; gap: 8px; margin-top: 22px; padding-top: 16px; }
+.notice { margin-bottom: 12px; }
+.empty { color: #605e5c; padding: 32px 12px; text-align: center; }
+@media screen and (max-width: 850px) { .layout { grid-template-columns: 1fr; } .side { border-left: 0; border-top: 1px solid #e1dfdd; padding: 16px 0 0; } .metrics { grid-template-columns: repeat(2, minmax(135px, 1fr)); } }
+@media screen and (max-width: 560px) { .root { padding: 12px; } .header { flex-direction: column; } .filters { grid-template-columns: 1fr; } .panelGrid { grid-template-columns: 1fr; } .full { grid-column: auto; } .milestone { grid-template-columns: 80px 1fr; } .milestone > :last-child { grid-column: 2; } }

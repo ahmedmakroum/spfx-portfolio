@@ -27,7 +27,10 @@ export const ListAnalyticsDashboard: React.FC<IListAnalyticsDashboardProps> = pr
   const { context, listConfigs, useMockData, chartAccent, defaultRangeStart, defaultRangeEnd, isDarkTheme } = props;
 
   const activeConfigs = React.useMemo(() => listConfigs.filter(c => !!(c.id && c.id.trim())), [listConfigs]);
-  const configsKey = activeConfigs.map(c => c.id).join('|');
+  const configsKey = React.useMemo(
+    () => useMockData ? 'mock-data' : activeConfigs.map(c => c.id).join('|'),
+    [activeConfigs, useMockData]
+  );
 
   const dataService = React.useMemo(() => createDataService(context, useMockData), [context, useMockData]);
 
@@ -44,7 +47,7 @@ export const ListAnalyticsDashboard: React.FC<IListAnalyticsDashboardProps> = pr
 
   const loadData = React.useCallback(
     async (range: IDateRange, isBackgroundRefresh: boolean): Promise<void> => {
-      if (activeConfigs.length === 0) {
+      if (!useMockData && activeConfigs.length === 0) {
         setLoadStatus('error');
         setDataError({
           reason: 'no-lists-configured',
@@ -77,12 +80,12 @@ export const ListAnalyticsDashboard: React.FC<IListAnalyticsDashboardProps> = pr
         setIsRefreshing(false);
       }
     },
-    [dataService, configsKey]
+    [activeConfigs, configsKey, dataService, useMockData]
   );
 
   React.useEffect(() => {
     loadData(filters.dateRange, false).catch(() => { /* errors are surfaced via dataError state */ });
-  }, [dataService, configsKey]);
+  }, [configsKey, dataService, loadData]);
 
   const handleFilterChange = (next: IFilterState): void => {
     setFilters(next);

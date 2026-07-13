@@ -1,4 +1,15 @@
-# List Analytics Dashboard (spfx-portfolio)
+# SPFx Portfolio
+
+This solution contains two independently deployable SharePoint Framework web parts:
+
+- **List Analytics Dashboard** - a configurable, cross-filtered analytics dashboard for up to three SharePoint lists.
+- **Request & Approval Hub** - an operational request queue with SLA indicators, request submission, triage filters, drill-in details, and approval actions.
+
+## Request & Approval Hub
+
+The Request & Approval Hub is a portfolio workflow demo that ships with a populated in-memory request queue. Users can create requests, filter the queue, inspect each request, assign it to service operations, and approve or reject it. The mock-data property provides a clear extension point for wiring the interface to SharePoint lists or Power Automate approvals in a tenant implementation.
+
+# List Analytics Dashboard
 
 A SharePoint Framework (SPFx) web part that aggregates data from up to three
 SharePoint lists into a single filterable analytics dashboard: a bar chart of

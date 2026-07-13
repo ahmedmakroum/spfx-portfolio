@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-client-side-web-part-manifest.schema.json",
+  "id": "1f57ecce-9d10-4a96-ac74-28cc765f603a",
+  "alias": "ProjectHealthBoardWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Advanced" },
+    "title": { "default": "Project Health Board" },
+    "description": { "default": "A delivery portfolio view for project health, milestones, risks, and actions." },
+    "officeFabricIconFontName": "ProjectCollection",
+    "properties": {
+      "title": "Project Health Board",
+      "useMockData": true
+    }
+  }]
+}

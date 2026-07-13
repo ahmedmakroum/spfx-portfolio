@@ -9,11 +9,29 @@
           "manifest": "./src/webparts/listAnalyticsDashboard/ListAnalyticsDashboardWebPart.manifest.json"
         }
       ]
+    },
+    "request-approval-hub-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/requestApprovalHub/RequestApprovalHubWebPart.js",
+          "manifest": "./src/webparts/requestApprovalHub/RequestApprovalHubWebPart.manifest.json"
+        }
+      ]
+    },
+    "project-health-board-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/projectHealthBoard/ProjectHealthBoardWebPart.js",
+          "manifest": "./src/webparts/projectHealthBoard/ProjectHealthBoardWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "ListAnalyticsDashboardWebPartStrings": "lib/webparts/listAnalyticsDashboard/loc/{locale}.js",
+    "RequestApprovalHubWebPartStrings": "lib/webparts/requestApprovalHub/loc/{locale}.js",
+    "ProjectHealthBoardWebPartStrings": "lib/webparts/projectHealthBoard/loc/{locale}.js",
     "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
   }
 }

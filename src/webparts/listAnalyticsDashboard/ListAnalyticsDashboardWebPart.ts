@@ -28,6 +28,16 @@ export interface IListAnalyticsDashboardWebPartProps {
   defaultRangeEnd?: IDateTimeFieldValue;
 }
 
+function getDateValue(fieldValue: IDateTimeFieldValue | undefined): Date | undefined {
+  const rawValue = fieldValue?.value as Date | string | undefined;
+  if (!rawValue) {
+    return undefined;
+  }
+
+  const date = rawValue instanceof Date ? rawValue : new Date(rawValue);
+  return Number.isNaN(date.getTime()) ? undefined : date;
+}
+
 export default class ListAnalyticsDashboardWebPart extends BaseClientSideWebPart<IListAnalyticsDashboardWebPartProps> {
   private _isDarkTheme: boolean = false;
 
@@ -43,8 +53,8 @@ export default class ListAnalyticsDashboardWebPart extends BaseClientSideWebPart
       listConfigs,
       useMockData: !!this.properties.useMockData,
       chartAccent: this.properties.chartAccent || 'blue',
-      defaultRangeStart: this.properties.defaultRangeStart?.value,
-      defaultRangeEnd: this.properties.defaultRangeEnd?.value,
+      defaultRangeStart: getDateValue(this.properties.defaultRangeStart),
+      defaultRangeEnd: getDateValue(this.properties.defaultRangeEnd),
       isDarkTheme: this._isDarkTheme
     });
 
