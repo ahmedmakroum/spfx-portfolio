@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-client-side-web-part-manifest.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
   "id": "1f57ecce-9d10-4a96-ac74-28cc765f603a",
   "alias": "ProjectHealthBoardWebPart",
   "componentType": "WebPart",

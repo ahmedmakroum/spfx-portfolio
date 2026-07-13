@@ -4,6 +4,7 @@ This solution contains two independently deployable SharePoint Framework web par
 
 - **List Analytics Dashboard** - a configurable, cross-filtered analytics dashboard for up to three SharePoint lists.
 - **Request & Approval Hub** - an operational request queue with SLA indicators, request submission, triage filters, drill-in details, and approval actions.
+- **Project Health Board** - a delivery portfolio view for project health, milestones, risk triage, and action ownership.
 
 ## Request & Approval Hub
 
