@@ -36,3 +36,6 @@ obj
 
 # Styles Generated Code
 *.scss.ts
+
+# Personal portfolio backlog (intentionally local)
+TODO.md

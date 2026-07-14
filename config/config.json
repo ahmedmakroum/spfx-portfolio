@@ -25,6 +25,14 @@
           "manifest": "./src/webparts/projectHealthBoard/ProjectHealthBoardWebPart.manifest.json"
         }
       ]
+    },
+    "onboarding-command-center-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/onboardingCommandCenter/OnboardingCommandCenterWebPart.js",
+          "manifest": "./src/webparts/onboardingCommandCenter/OnboardingCommandCenterWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -32,6 +40,7 @@
     "ListAnalyticsDashboardWebPartStrings": "lib/webparts/listAnalyticsDashboard/loc/{locale}.js",
     "RequestApprovalHubWebPartStrings": "lib/webparts/requestApprovalHub/loc/{locale}.js",
     "ProjectHealthBoardWebPartStrings": "lib/webparts/projectHealthBoard/loc/{locale}.js",
+    "OnboardingCommandCenterWebPartStrings": "lib/webparts/onboardingCommandCenter/loc/{locale}.js",
     "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
   }
 }

@@ -1,0 +1,75 @@
+.root { box-sizing: border-box; color: var(--bodyText, #242424); font-family: "Segoe UI", Arial, sans-serif; padding: 16px; }
+.hero { align-items: center; background: linear-gradient(120deg, #eef6ff 0%, #f7f4ff 100%); border: 1px solid #d7e7f7; display: flex; gap: 24px; justify-content: space-between; margin-bottom: 16px; padding: 25px 28px; }
+.heroCopy { max-width: 670px; }
+.eyebrow, .cardEyebrow { color: #5b5fc7; font-size: 12px; font-weight: 700; letter-spacing: .03em; margin: 0 0 5px; text-transform: uppercase; }
+.title { font-size: 28px; font-weight: 650; letter-spacing: -.02em; line-height: 1.15; margin: 0; }
+.subtitle { color: #514f4d; font-size: 15px; line-height: 1.5; margin: 8px 0 0; }
+.progressSummary { align-items: center; display: flex; flex: 0 0 auto; gap: 12px; }
+.progressSummary strong, .progressSummary span { display: block; }
+.progressSummary strong { font-size: 14px; }
+.progressSummary span { color: #605e5c; font-size: 12px; margin-top: 3px; }
+.progressRing { align-items: center; background: conic-gradient(#5b5fc7 var(--progress), #d9d8f3 0); border-radius: 50%; display: flex; height: 68px; justify-content: center; position: relative; width: 68px; }
+.progressRing::after { background: #f3f5ff; border-radius: 50%; content: ""; height: 54px; position: absolute; width: 54px; }
+.progressRing span { color: #37356f; font-size: 15px; font-weight: 700; margin: 0; position: relative; z-index: 1; }
+.notice { margin-bottom: 16px; }
+.layout { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr) 292px; }
+.nextAction { align-items: center; background: #fff; border: 1px solid #e1dfdd; border-left: 4px solid #5b5fc7; display: grid; gap: 14px; grid-template-columns: auto minmax(0, 1fr) auto; margin-bottom: 24px; padding: 17px; }
+.nextActionIcon { align-items: center; background: #edebff; border-radius: 50%; color: #4f52b2; display: flex; font-size: 19px; height: 42px; justify-content: center; width: 42px; }
+.nextActionCopy { min-width: 0; }
+.nextAction h2, .sectionHeader h2, .sidebarCard h2 { font-size: 17px; font-weight: 600; line-height: 1.25; margin: 0; }
+.nextAction p:not(.cardEyebrow), .sectionHeader p, .sidebarText { color: #605e5c; font-size: 13px; line-height: 1.45; margin: 4px 0 0; }
+.sectionHeader { align-items: flex-start; display: flex; justify-content: space-between; margin-bottom: 13px; }
+.taskCount { background: #f3f2f1; color: #605e5c; font-size: 12px; padding: 5px 8px; white-space: nowrap; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 11px; }
+.filterButton { background: #fff; border: 1px solid #c8c6c4; color: #323130; cursor: pointer; font: inherit; font-size: 13px; padding: 6px 12px; }
+.filterButton:hover, .filterButton:focus { border-color: #5b5fc7; }
+.filterActive { background: #5b5fc7; border-color: #5b5fc7; color: #fff; font-weight: 600; }
+.taskList { border-top: 1px solid #e1dfdd; }
+.task { align-items: flex-start; border-bottom: 1px solid #e1dfdd; display: grid; gap: 12px; grid-template-columns: auto minmax(0, 1fr) auto; padding: 16px 4px; }
+.taskIcon { align-items: center; background: #edf4fc; border-radius: 50%; color: #0078d4; display: flex; height: 36px; justify-content: center; width: 36px; }
+.taskIconDone { background: #dff6dd; color: #107c10; }
+.taskTopline { align-items: center; display: flex; gap: 7px; }
+.category, .status { border-radius: 2px; display: inline-block; font-size: 11px; font-weight: 600; line-height: 1.2; padding: 3px 6px; }
+.category { background: #f3f2f1; color: #484644; }
+.statusDone { background: #dff6dd; color: #0b5a10; }
+.statusProgress { background: #d7ebff; color: #004578; }
+.statusNext { background: #fff4ce; color: #5c2d00; }
+.task h3 { font-size: 14px; font-weight: 600; margin: 6px 0 2px; }
+.taskBody > p { color: #605e5c; font-size: 13px; line-height: 1.4; margin: 0; }
+.taskMeta { color: #605e5c; display: flex; flex-wrap: wrap; font-size: 12px; gap: 11px; margin-top: 8px; }
+.taskMeta span { align-items: center; display: inline-flex; gap: 4px; }
+.taskMeta :global(.ms-Icon) { font-size: 12px; }
+.taskButton { align-self: center; }
+.sidebar { display: flex; flex-direction: column; gap: 12px; }
+.sidebarCard { background: #fff; border: 1px solid #e1dfdd; padding: 16px; }
+.avatar { align-items: center; background: #d7ebff; border-radius: 50%; color: #004578; display: flex; font-size: 13px; font-weight: 700; height: 38px; justify-content: center; margin-bottom: 10px; width: 38px; }
+.sidebarCard h2 { font-size: 16px; }
+.sidebarCard > :global(.ms-Button) { margin-top: 13px; }
+.timeline { list-style: none; margin: 10px 0 0; padding: 0; }
+.timeline li { display: grid; gap: 10px; grid-template-columns: 30px 1fr; min-height: 43px; position: relative; }
+.timeline li:not(:last-child)::before { background: #d2d0ce; content: ""; height: 24px; left: 14px; position: absolute; top: 19px; width: 1px; }
+.timeline li > span { align-items: center; background: #f3f2f1; border-radius: 50%; color: #605e5c; display: flex; font-size: 10px; font-weight: 600; height: 29px; justify-content: center; z-index: 1; }
+.timeline strong, .timeline small { display: block; }
+.timeline strong { font-size: 12px; }
+.timeline small { color: #605e5c; font-size: 11px; margin-top: 2px; }
+.timelineDone > span { background: #dff6dd !important; color: #0b5a10 !important; }
+.timelineCurrent > span { background: #5b5fc7 !important; color: #fff !important; }
+.helpCard { align-items: flex-start; background: #f7f7fc; border-color: #e1e0f3; display: flex; gap: 10px; }
+.helpCard > :global(.ms-Icon) { color: #5b5fc7; font-size: 18px; margin-top: 2px; }
+.helpCard h2 { font-size: 14px; }
+.helpCard p { color: #605e5c; font-size: 12px; line-height: 1.4; margin: 4px 0 8px; }
+.helpCard button { background: transparent; border: 0; color: #005a9e; cursor: pointer; font: inherit; font-size: 12px; font-weight: 600; padding: 0; }
+.helpCard button :global(.ms-Icon) { font-size: 10px; }
+.panelContent { padding-top: 6px; }
+.panelBadges { display: flex; gap: 7px; }
+.panelLead { font-size: 15px; line-height: 1.5; margin: 15px 0; }
+.detailGrid { border-bottom: 1px solid #edebe9; border-top: 1px solid #edebe9; display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr); padding: 14px 0; }
+.detailGrid span, .detailGrid strong { display: block; }
+.detailGrid span { color: #605e5c; font-size: 12px; margin-bottom: 3px; }
+.detailGrid strong { font-size: 13px; line-height: 1.35; }
+.helpBox { background: #f3f8fc; display: flex; gap: 10px; line-height: 1.45; margin-top: 17px; padding: 12px; }
+.helpBox :global(.ms-Icon) { color: #0078d4; margin-top: 2px; }
+.helpBox p { font-size: 13px; margin: 0; }
+.panelActions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+@media screen and (max-width: 860px) { .layout { grid-template-columns: 1fr; } .sidebar { display: grid; grid-template-columns: repeat(3, 1fr); } }
+@media screen and (max-width: 620px) { .root { padding: 12px; } .hero, .nextAction { align-items: flex-start; flex-direction: column; grid-template-columns: 1fr; padding: 18px; } .progressSummary { margin-top: 4px; } .task { grid-template-columns: auto minmax(0, 1fr); } .taskButton { grid-column: 2; justify-self: start; } .sidebar { display: flex; } .detailGrid { grid-template-columns: 1fr; } }

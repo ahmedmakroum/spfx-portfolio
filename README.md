@@ -1,10 +1,21 @@
 # SPFx Portfolio
 
-This solution contains two independently deployable SharePoint Framework web parts:
+This solution contains independently deployable SharePoint Framework web parts:
 
 - **List Analytics Dashboard** - a configurable, cross-filtered analytics dashboard for up to three SharePoint lists.
 - **Request & Approval Hub** - an operational request queue with SLA indicators, request submission, triage filters, drill-in details, and approval actions.
 - **Project Health Board** - a delivery portfolio view for project health, milestones, risk triage, and action ownership.
+- **Employee Onboarding Command Center** - a personalized first-week experience with actionable tasks, progress, buddy support, and task-level help.
+
+## Employee Onboarding Command Center
+
+The Employee Onboarding Command Center is a high-polish workflow demo for the
+first week at a new organization. It deliberately makes the next best action,
+task ownership, time commitment, support route, and progress visible in one
+place. The included demo data is interactive: filter by task type, open a task,
+mark it complete, or request help. In a tenant implementation, its task,
+profile, and resource seams can be backed by SharePoint Lists, Microsoft Graph,
+and Power Automate.
 
 ## Request & Approval Hub
 

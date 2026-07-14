@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "a38bdfae-f0d7-4c43-9bdc-4b7980b47d86",
+  "alias": "OnboardingCommandCenterWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Advanced" },
+    "title": { "default": "Employee Onboarding Command Center" },
+    "description": { "default": "A personalized first-week plan that makes onboarding tasks, ownership, and support clear." },
+    "officeFabricIconFontName": "Rocket",
+    "properties": { "title": "Welcome to Northstar" }
+  }]
+}
