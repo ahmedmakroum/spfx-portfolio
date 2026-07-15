@@ -6,6 +6,16 @@ This solution contains independently deployable SharePoint Framework web parts:
 - **Request & Approval Hub** - an operational request queue with SLA indicators, request submission, triage filters, drill-in details, and approval actions.
 - **Project Health Board** - a delivery portfolio view for project health, milestones, risk triage, and action ownership.
 - **Employee Onboarding Command Center** - a personalized first-week experience with actionable tasks, progress, buddy support, and task-level help.
+- **Knowledge Discovery Hub** - a search-first knowledge experience with promoted answers, freshness signals, and useful-result feedback.
+
+## Knowledge Discovery Hub
+
+The Knowledge Discovery Hub helps employees find a trustworthy answer without
+having to know where it lives. It includes searchable demo content, topic-led
+browsing, promoted answers, ownership and freshness signals, result feedback,
+empty and loading states, and a focused detail view. Mock data is enabled by
+default; its `useMockData` seam is ready for Microsoft Search or Microsoft
+Graph results, permissions trimming, source links, and a real feedback flow.
 
 ## Employee Onboarding Command Center
 

@@ -33,6 +33,14 @@
           "manifest": "./src/webparts/onboardingCommandCenter/OnboardingCommandCenterWebPart.manifest.json"
         }
       ]
+    },
+    "knowledge-discovery-hub-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/knowledgeDiscoveryHub/KnowledgeDiscoveryHubWebPart.js",
+          "manifest": "./src/webparts/knowledgeDiscoveryHub/KnowledgeDiscoveryHubWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -41,6 +49,7 @@
     "RequestApprovalHubWebPartStrings": "lib/webparts/requestApprovalHub/loc/{locale}.js",
     "ProjectHealthBoardWebPartStrings": "lib/webparts/projectHealthBoard/loc/{locale}.js",
     "OnboardingCommandCenterWebPartStrings": "lib/webparts/onboardingCommandCenter/loc/{locale}.js",
+    "KnowledgeDiscoveryHubWebPartStrings": "lib/webparts/knowledgeDiscoveryHub/loc/{locale}.js",
     "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
   }
 }
